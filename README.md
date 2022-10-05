@@ -106,14 +106,17 @@ for i in range(10):
 
 Insert image here
 
-###Start Point:
-/home/sec/mobilerobot-openloopcontrol/startingpoint.png
+##Start Point:
+
+![image](https://user-images.githubusercontent.com/113497491/193987354-c0662f50-3c9f-48da-ad5b-7460e3e2df0a.png)
 
 
 
 
-###End Point:
-/home/sec/mobilerobot-openloopcontrol/endingpoint.png
+
+##End Point:
+
+
 
 
 ## MobileRobot Movement Video:
