@@ -39,7 +39,6 @@ from robomaster import robot
 import time
 from robomaster import camera
 
-
 if _name_ == '_main_':
     ep_robot = robot.Robot()
     ep_robot.initialize(conn_type="ap")
@@ -63,8 +62,7 @@ for i in range(10):
     print("Camera streaming started...")
     ep_camera.start_video_stream(display=True, resolution=camera.STREAM_360P)    
     ep_camera = ep_robot.camera   
-    
- 
+   
     ep_chassis.move(x=3.9, y=0, z=0, xy_speed=0.75).wait_for_completed()
 
     ep_chassis.drive_speed(x=0.2,y=0,z=20)
@@ -79,27 +77,9 @@ for i in range(10):
 
     ep_chassis.move(x=0, y=0.1, z=0, xy_speed=0.75).wait_for_completed()
 
-
-    #ep_chassis.move(x=2.5, y=0, z=0, xy_speed=0.75).wait_for_completed()
-
-
-    # ep_chassis.move(x=2, y=0, z=0, xy_speed=1).wait_for_completed()
-
-
-    # # ep_chassis.move(x=1, y=0, z=0, xy_speed=0.75).wait_for_completed()
-
-    # # ep_chassis.move(x=0, y=0, z=-90, xy_speed=1).wait_for_completed()
-
-    # # ep_chassis.move(x=2, y=0, z=0, xy_speed=0.75).wait_for_completed()
-
-    # # ep_chassis.move(x=0, y=0, z=90, xy_speed=1).wait_for_completed()
-
-    # # ep_chassis.move(x=1, y=0, z=0, xy_speed=0.75).wait_for_completed()
-
     ep_camera.stop_video_stream()
     print("Stopped video streaming...")
 
-    
     ep_robot.close()
 ```
 
@@ -128,8 +108,6 @@ Insert image here
 ## MobileRobot Movement Video:
 
 https://youtu.be/JXPdApFe0og
-
-
 
 
 
